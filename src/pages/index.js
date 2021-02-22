@@ -10,7 +10,7 @@ export default ({data}) => {
  
     {data.allWpPost.nodes.map(node => (
        <Post 
-       image = {node.featuredImage.node.mediaItemUrl || 'https://methepallavi.com/wp-content/uploads/2021/02/Eslint-Prettier-Create-React-App-2019-Cover.png'}
+       image = {node.featuredImage.node.mediaItemUrl}
        alt= {node.featuredImage.node.slug}
        title={node.title} 
        excerpt={node.excerpt}
