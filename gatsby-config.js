@@ -10,7 +10,7 @@ module.exports = {
     // You can have multiple instances of this plugin
     // to read source nodes from different locations on your
     // filesystem.
-    //
+    // offline added
     // The following sets up the Jekyll pattern of having a
     // "pages" directory for Markdown files and a "data" directory
     // for `.json`, `.yaml`, `.csv`.
@@ -41,9 +41,10 @@ module.exports = {
         background_color: `#f8f9fa`,
         theme_color: `#ffffff`,
         display: `standalone`,
-      }
+        icon: 'static/fairytale.png',
+      },
     },
-    `gatsby-plugin-offline`  
+    `gatsby-plugin-offline` 
   ],
   siteMetadata: {
     title: "Gatsby-Bootstrap",
