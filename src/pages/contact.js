@@ -1,6 +1,8 @@
-import React, { lazy } from 'react';
-const PrimaryLayout = lazy(() => import('../layouts/PrimaryLayout'));
+import React from 'react';
 import {Form , Button} from 'react-bootstrap'
+import loadable from '@loadable/component';
+const PrimaryLayout = loadable(() => import('../layouts/PrimaryLayout'));
+
 
 
 export default () => (

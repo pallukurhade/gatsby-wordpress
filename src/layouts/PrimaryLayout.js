@@ -1,7 +1,8 @@
-import React, { lazy } from 'react';
-const Header = lazy(() => import('../components/Header'));
-const Footer = lazy(() => import('../components/Footer'));
-const SEO = lazy(() => import('../components/SEO'));
+import React from 'react';
+import loadable from '@loadable/component';
+const Header = loadable(() => import('../components/Header'));
+const Footer = loadable(() => import('../components/Footer'));
+const SEO = loadable(() => import('../components/SEO'));
 
 const PrimaryLayout = (props) => (
     <div>

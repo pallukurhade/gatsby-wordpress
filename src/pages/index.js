@@ -1,8 +1,10 @@
-import React, { lazy } from 'react';
-const PrimaryLayout = lazy(() => import('../layouts/PrimaryLayout'));
-const Post = lazy(() => import('../components/Post'));
-
+import React from 'react';
+import loadable from '@loadable/component';
 import { graphql } from 'gatsby';
+const PrimaryLayout = loadable(() => import('../layouts/PrimaryLayout'));
+const Post = loadable(() => import('../components/Post'));
+
+
 
 export default ({data}) => {
   console.log(data);

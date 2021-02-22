@@ -1,10 +1,12 @@
 import React from 'react';
+import loadable from '@loadable/component';
 import {graphql} from 'gatsby';
-const Header = lazy(() => import('../components/Header'));
-const Footer = lazy(() => import('../components/Footer'));
-const SEO = lazy(() => import('../components/SEO'));
-
 import innerText from 'react-innertext';
+
+const Header = loadable(() => import('../components/Header'));
+const Footer = loadable(() => import('../components/Footer'));
+const SEO = loadable(() => import('../components/SEO'));
+
 
 const BlogpostLayout = ({data}) => {
    const post = data.wpPost; 
