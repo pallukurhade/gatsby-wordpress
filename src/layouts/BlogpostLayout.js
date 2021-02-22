@@ -3,6 +3,7 @@ import loadable from '@loadable/component';
 import {graphql} from 'gatsby';
 import innerText from 'react-innertext';
 
+//Lazy load
 const Header = loadable(() => import('../components/Header'));
 const Footer = loadable(() => import('../components/Footer'));
 const SEO = loadable(() => import('../components/SEO'));
