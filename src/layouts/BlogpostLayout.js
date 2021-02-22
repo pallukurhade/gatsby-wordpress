@@ -1,8 +1,9 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import SEO from '../components/SEO';
+const Header = lazy(() => import('../components/Header'));
+const Footer = lazy(() => import('../components/Footer'));
+const SEO = lazy(() => import('../components/SEO'));
+
 import innerText from 'react-innertext';
 
 const BlogpostLayout = ({data}) => {

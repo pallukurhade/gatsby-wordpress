@@ -1,6 +1,7 @@
-import React from 'react';
-import PrimaryLayout from '../layouts/PrimaryLayout';
-import Post from '../components/Post';
+import React, { lazy } from 'react';
+const PrimaryLayout = lazy(() => import('../layouts/PrimaryLayout'));
+const Post = lazy(() => import('../components/Post'));
+
 import { graphql } from 'gatsby';
 
 export default ({data}) => {
