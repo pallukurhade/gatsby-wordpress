@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar, Nav} from "react-bootstrap";
 import {Link} from 'gatsby';
 const header = (props) =>(
-    <div>
+   <header>
     <Navbar bg="light" expand="lg">
   <Navbar.Brand href="/">Gatsby Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,8 +15,8 @@ const header = (props) =>(
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-    <h1>{props.title}</h1>
-  </div>  
+</header>
+  
     
 )
 
