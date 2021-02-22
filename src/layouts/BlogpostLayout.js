@@ -3,7 +3,7 @@ import {graphql} from 'gatsby';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
-import innerText from 'innertext';
+import innerText from 'react-innertext';
 
 const BlogpostLayout = ({data}) => {
    const post = data.wpPost; 
