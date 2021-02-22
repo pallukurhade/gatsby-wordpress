@@ -5,7 +5,7 @@ const Post = (props) => (
   <post>
    <div className="p-3"> 
     <Card>
-    <Card.Img variant="top" src={props.image} alt={props.alt || "Default"} />
+    <Card.Img width="125" height="125" variant="top" src={props.image} alt={props.alt || "Default"} />
     <Card.Body>
       <Card.Title dangerouslySetInnerHTML={{__html: props.title}} />
       <Card.Text dangerouslySetInnerHTML={{__html: props.excerpt}} />
