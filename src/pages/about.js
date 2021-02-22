@@ -1,5 +1,6 @@
-import React, { lazy } from 'react';
-const PrimaryLayout = lazy(() => import('../layouts/PrimaryLayout'));
+import React from 'react';
+import loadable from '@loadable/component';
+const PrimaryLayout = loadable(() => import('../layouts/PrimaryLayout'));
 
 
 
